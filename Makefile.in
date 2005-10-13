@@ -1,10 +1,10 @@
-# $Id: Makefile.in,v 1.1.1.1 2005-10-13 05:30:51 hww3 Exp $
+# $Id: Makefile.in,v 1.2 2005-10-13 05:34:37 hww3 Exp $
 @make_variables@
 VPATH=@srcdir@:@srcdir@/../..:../..
 
 OBJS=
 
-MODDIR=Public.pmod/Tools.pmod
+MODDIR=Public.pmod/Tools.pmod/
 MODNAME=ConfigFiles
 MODULE_PMOD_IN=module.pmod.in
 AUTODOC_SRC_IN=
