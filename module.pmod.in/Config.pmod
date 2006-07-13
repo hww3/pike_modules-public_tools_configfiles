@@ -43,9 +43,13 @@ mapping read(string contents){
     string section,attribute,value;
     array c;
     if(contents)
-        c=contents/"\n";
+    {
+      contents = replace(contents, ({"\r\n", "\r"}), ({"\n", ""}));
+      c=contents/"\n";
+    }
     else return ([]); 
     foreach(c, string line) {
+        if(!sizeof(line) || line[0] == '#') continue;
         if((line-" ")[0..0]=="[") { // We've got a section header
             sscanf(line,"%*s[%s]%*s",section);
             if(!config[section])
