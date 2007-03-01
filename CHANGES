@@ -1,3 +1,8 @@
+Version 1.1 
+
+- fixes for comment lines (# as first character on line)
+- fixes for windows line endings
+
 Version 1.0
 
 - initial release
