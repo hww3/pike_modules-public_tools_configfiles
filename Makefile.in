@@ -6,7 +6,6 @@ OBJS=
 
 MODDIR=Public.pmod/Tools.pmod/
 MODNAME=ConfigFiles
-MODULE_PMOD_IN=module.pmod.in
 AUTODOC_SRC_IN=
 MODULE_NAME=Public.Tools.ConfigFiles
 MODULE_DIR_NAME=Public_Tools_ConfigFiles
