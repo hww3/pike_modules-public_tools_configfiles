@@ -24,7 +24,7 @@ CONFIG_HEADERS=@CONFIG_HEADERS@
 @dependencies@
 
 release:
-	svn copy --force -m "tagging project" http://wush.net/svn/hww3/trunk http://wush.net/svn/hww3/tags/Public_Tools_ConfigFiles_RELEASE_1_${MIN}
+	svn copy -m "tagging project" http://wush.net/svn/hww3/trunk http://wush.net/svn/hww3/tags/Public_Tools_ConfigFiles_RELEASE_1_${MIN}
 	svn export http://wush.net/svn/hww3/tags/Public_Tools_ConfigFiles_RELEASE_1_${MIN}/pike_modules/Public_Tools_ConfigFiles Public_Tools_ConfigFiles-1.${MIN}
 	cd ${MODULE_DIR_NAME}-1.${MIN} && \
 	pike -x module --autoheader && pike -x module --autoconf && \
